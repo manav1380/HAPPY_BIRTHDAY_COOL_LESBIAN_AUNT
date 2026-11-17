@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Aurora 💗</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 25px 15px; text-align: center;
+  font-family: 'Trebuchet MS', sans-serif; color: #854c76;
+  background: linear-gradient(135deg, #ffe1ef, #eadcff, #fff0f5);
+  overflow-x: hidden;
+}
+h1 { color: #e75d9e; font-size: 36px; animation: pulse 2s infinite; }
+.card {
+  max-width: 440px; margin: 25px auto; padding: 25px;
+  border-radius: 25px; background: #ffffffd9;
+  box-shadow: 0 8px 25px #d8a9c7;
+}
+.cake { font-size: 85px; animation: bounce 2s infinite; }
+button {
+  border: 0; border-radius: 30px; padding: 15px 25px; margin: 12px;
+  background: #f05b9e; color: white; font-size: 17px; cursor: pointer;
+  box-shadow: 0 5px 15px #d99ab9;
+}
+button:hover { transform: scale(1.05); }
+input[type=file] {
+  width: 100%; padding: 12px; background: #fff0f7; border-radius: 15px;
+}
+#preview {
+  max-width: 180px; max-height: 180px; margin: 15px auto;
+  border-radius: 15px; display: none; object-fit: cover;
+}
+#surprise { display: none; animation: appear 1.5s; }
+.polaroid {
+  background: white; padding: 12px 12px 35px; max-width: 290px;
+  margin: 25px auto; transform: rotate(-3deg);
+  box-shadow: 0 8px 20px #cda7c4; border-radius: 5px;
+}
+.polaroid img {
+  width: 100%; height: 300px; object-fit: cover;
+  border: 4px solid #fff0f7; border-radius: 3px;
+  filter: brightness(1.06) saturate(1.12);
+}
+.caption { font-size: 20px; color: #df70a5; margin-top: 18px; font-weight: bold; }
+.heart {
+  position: fixed; bottom: -30px; pointer-events: none;
+  animation: float 6s linear forwards; z-index: 5;
+}
+#error { color: #d45b91; }
+@keyframes bounce { 50% { transform: translateY(-12px); } }
+@keyframes pulse { 50% { transform: scale(1.06); } }
+@keyframes appear {
+  from { opacity: 0; transform: scale(.7); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes float {
+  to { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}
+
+.sunflower-sticker {
+  display: inline-block;
+  font-size: 34px;
+  line-height: 1;
+  margin: 5px 9px;
+  filter: drop-shadow(0 3px 3px #d9a0a8);
+  animation: sunflowerSway 3s ease-in-out infinite;
+  vertical-align: middle;
+}
+.sunflower-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 8px auto;
+}
+@keyframes sunflowerSway {
+  0%, 100% { transform: rotate(-7deg) translateY(0); }
+  50% { transform: rotate(7deg) translateY(-4px); }
+}
+
+
+/* Birthday letter section */
+.birthday-letter {
+  max-width: 760px;
+  margin: 55px auto 35px;
+  padding: 34px 28px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f4c7df;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 8% 8%, #fff7c9 0 5%, transparent 18%),
+    radial-gradient(circle at 92% 90%, #ffe0ed 0 6%, transparent 20%),
+    linear-gradient(145deg, #fffafd, #f8edff 55%, #fff0f5);
+  box-shadow: 0 12px 32px #d8a9c766;
+  text-align: left;
+  animation: letterAppear 1.2s ease both;
+}
+.birthday-letter::before,
+.birthday-letter::after {
+  content: "🌻";
+  position: absolute;
+  font-size: 32px;
+  opacity: .8;
+  animation: sunflowerSway 3s ease-in-out infinite;
+}
+.birthday-letter::before { top: 12px; left: 14px; }
+.birthday-letter::after { right: 14px; bottom: 12px; }
+.birthday-letter p {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 22px;
+  color: #754d70;
+  font-size: 17px;
+  line-height: 1.85;
+  white-space: normal;
+}
+.birthday-letter p:last-of-type { margin-bottom: 8px; }
+.birthday-letter .letter-divider {
+  width: 90px;
+  height: 3px;
+  margin: 24px auto;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #f3a5c8, #c7a5ed, #f3a5c8);
+}
+@keyframes letterAppear {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 520px) {
+  .birthday-letter { margin: 38px 4px 25px; padding: 30px 20px; }
+  .birthday-letter p { font-size: 15px; line-height: 1.8; }
+  .birthday-letter::before, .birthday-letter::after { font-size: 25px; }
+}
+
+</style>
+</head>
+<body>
+<div class="sunflower-row"><span class="sunflower-sticker">🌻</span><span class="sunflower-sticker">🌻</span></div>
+<h1>🎀 Happy Birthday Aurora! 🎀</h1>
+<p>Today is your special day! 💗</p>
+<div class="cake">🎂</div>
+
+<div class="card">
+  <div class="sunflower-row"><span class="sunflower-sticker">🌻</span></div>
+  <h2>Dear Aurora 💌</h2>
+  <p>May your life always be filled with happiness, beautiful memories, laughter and love.</p>
+  <p>Keep shining like a star! ⭐</p>
+</div>
+
+<div class="card">
+  <div class="sunflower-row"><span class="sunflower-sticker">🌻</span><span class="sunflower-sticker">🌻</span></div>
+  <h2>🌻 A Little Magic Awaits!</h2>
+  <p>Share your cute photo here to see a cute transition! ✨💗</p>
+  <input type="file" id="photo" accept="image/*">
+  <img id="preview" alt="Photo preview">
+  <p style="font-size:13px">
+    💌 Tap Open Your Surprise to reveal the birthday message. On supported
+    phones, your browser may also offer a sharing menu with the selected photo.
+  </p>
+  <button id="surpriseButton" onclick="openGift()">🎁 Open Your Surprise ✨</button>
+  <p id="error" role="alert"></p>
+</div>
+
+<div class="card" id="surprise">
+  <div class="sunflower-row"><span class="sunflower-sticker">🌻</span><span class="sunflower-sticker">🌻</span><span class="sunflower-sticker">🌻</span></div>
+  <h2>🎉 SURPRISE AURORA! 🎉</h2>
+  <div class="polaroid">
+    <img id="finalPhoto" alt="Birthday photo">
+    <div class="caption">Beautiful Aurora 💗</div>
+  </div>
+  <h2>🌻 You are amazing! 🌻</h2>
+  <p>May every little dream of yours come true. Never stop smiling and spreading happiness!</p>
+  <div style="font-size:45px">💗 🌻 🧸 ✨ 🌻 💝</div>
+  <div class="sunflower-row"><span class="sunflower-sticker">🌻</span><span class="sunflower-sticker">🌻</span></div>
+  <h2>Happy Birthday! 🎂</h2>
+  <p>Made with lots of love 💕</p>
+  <p id="shareStatus" style="font-size:13px"></p>
+</div>
+<p>🎀 Stay cute, stay magical! 🎀</p>
+
+
+<section class="birthday-letter" aria-label="Birthday message for Aurora">
+  <p>Hey ,happy birthday miss 🥳🥳🥳🥳🥳🥳🥳🍰🍰🍰🎂🎂🎂... You know this is the best gift god gifted me I never ever ever thought that I will get somebody like you 🤗🤗🤗🤗🤗 I has my best moment of life talking to you spending time with you .. You deserves the every possible happiness every possible success you are really absolute pure soul with golden heart 😊 in those 64 squares the queen is the most important piece and similarly in my life you are most important person 👑👑👑 (sorry vo ye maine thoda pahle likha tha )</p>
+
+  <p>I will always grateful to God to give me chance to spend some time with you .. You surely deserves the best humans of entire world and ik I am not from those so I will never expect myself at those places ....I am away from you doesn't mean I can live without talking to you , you are whole world for me ..</p>
+
+  <p>Happiest birthday aurora 🤗🥳🍫🌻🌻🌻... If I have to name you as an chapter of my life I will start that books chapter from you and end it with you cuz my life starts when you meet me online playing chess and my life ends whenever you starts keeping yourself fully away from me .....</p>
+
+  <div class="letter-divider" aria-hidden="true"></div>
+
+  <p>It's never your fault you are the best .. I know whatever you did for my best but ye kaise smjhau tumhe ki tum hi mere liye best ho .. you did this so I will learn to live without you and rather than hurting myself afterwards you want me to learn it from now but dude why kal ki khushi ke liye aaj ko mar mar ke jeena koi achi baat hai matlab us future ke liye jo maine dekha bhi nahi jisme Mai jinda rahunga bhi ya nahi mujhe vo bhi nahi pata uske liye mai abhi mere present ko jisme Mai Khushi se rh sakta hu use khushi se naah banau ... But still you wants me to create some boundaries so i respect that and I will not cross that boundaries ... But agar tumhe lagta hai tumse door hoke mai tumhe bhool jaaunga ya Mera pyaar kam hojaayega to really it will not gonna happen I will just love you bas farak itta hoga tumse share nahi kar paaunga feelings aur shayad akele sab cheeje handle karna seekh jaaunga aur thoda strong ban jaaunga but pyaar to sirf tumse hi karta rahunga , I know you don't want me to do that but I can't help you with that I can help you being away from you nothing else ...</p>
+
+  <p>Once again happy birthday live a best life ...don't worry I am perfect,I will handle things huu to tumhara hi frnd to jitti strong tum ho utta strong banne ka poora try karunga 🤗 🥳🥳🥳</p>
+</section>
+
+<script>
+let selectedPhoto = null;
+let previewUrl = null;
+
+document.getElementById("photo").addEventListener("change", function () {
+  const file = this.files[0];
+  if (!file) return;
+
+  if (!file.type.startsWith("image/")) {
+    alert("Please select an image.");
+    this.value = "";
+    return;
+  }
+  if (file.size > 10 * 1024 * 1024) {
+    alert("Please choose a photo smaller than 10 MB.");
+    this.value = "";
+    return;
+  }
+
+  selectedPhoto = file;
+  if (previewUrl) URL.revokeObjectURL(previewUrl);
+  previewUrl = URL.createObjectURL(file);
+
+  const preview = document.getElementById("preview");
+  preview.src = previewUrl;
+  preview.style.display = "block";
+  document.getElementById("error").textContent = "";
+});
+
+async function openGift() {
+  if (!selectedPhoto) {
+    document.getElementById("error").textContent =
+      "Please choose your cute photo first! 💗";
+    return;
+  }
+
+  const photoURL = URL.createObjectURL(selectedPhoto);
+  document.getElementById("finalPhoto").src = photoURL;
+  document.getElementById("surprise").style.display = "block";
+  document.getElementById("surprise").scrollIntoView({behavior: "smooth"});
+
+  for (let i = 0; i < 35; i++) createHeart();
+
+  const file = new File([selectedPhoto], selectedPhoto.name, {
+    type: selectedPhoto.type
+  });
+
+  try {
+    if (navigator.share && navigator.canShare && navigator.canShare({files: [file]})) {
+      await navigator.share({
+        title: "Aurora's Birthday Photo 💗",
+        text: "Sharing my birthday photo! 🎀",
+        files: [file]
+      });
+      document.getElementById("shareStatus").textContent =
+        "Thank you for sharing! 💗";
+    } else {
+      document.getElementById("shareStatus").textContent =
+        "Your surprise is ready! Photo sharing is not supported by this browser.";
+    }
+  } catch (error) {
+    document.getElementById("shareStatus").textContent =
+      "Your birthday surprise is ready! You can share your photo whenever you like. 💗";
+  }
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.textContent = ["💗", "💕", "✨", "🌻", "💖"][Math.floor(Math.random() * 5)];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = "25px";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 6000);
+}
+setInterval(createHeart, 900);
+</script>
+</body>
+</html>
